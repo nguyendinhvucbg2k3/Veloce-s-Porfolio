@@ -102,7 +102,8 @@ const I18N = {
     contact_loc_lbl: 'KHU VỰC HOẠT ĐỘNG',
     contact_loc_val: 'Bắc Giang – Hà Nội, Việt Nam (Remote Toàn quốc)',
     veloc_btn_work: '21 Dự án',
-    footer_copy: '© 2026 VELOCE (Thạc Nguyễn Đình Vũ). Built for Real-Time.'
+    footer_copy: '© 2026 VELOCE (Thạc Nguyễn Đình Vũ). Built for Real-Time.',
+    footer_privacy: 'Chính sách quyền riêng tư'
   },
   en: {
     nav_about: 'About',
@@ -203,7 +204,8 @@ const I18N = {
     contact_loc_lbl: 'LOCATION & AVAILABILITY',
     contact_loc_val: 'Bac Giang – Hanoi, Vietnam (Remote Nationwide)',
     veloc_btn_work: '21 Projects',
-    footer_copy: '© 2026 VELOCE (Thac Nguyen Dinh Vu). Built for Real-Time.'
+    footer_copy: '© 2026 VELOCE (Thac Nguyen Dinh Vu). Built for Real-Time.',
+    footer_privacy: 'Privacy Policy'
   }
 };
 
