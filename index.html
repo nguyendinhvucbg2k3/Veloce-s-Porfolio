@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VELOCE — Thạc Nguyễn Đình Vũ | Esports Creative & Media Manager</title>
+  <meta name="description" content="Personal Brand & Portfolio Website của Veloce (Thạc Nguyễn Đình Vũ) — Freelance Esports Creative & Media Manager. Built for Real-Time.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo" aria-label="Veloce Home">
+        <img src="assets/img/brand/veloce-logo-dark.svg" alt="VELOCE Logo">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav_about">Giới thiệu</a></li>
+        <li><a href="#portfolio" data-i18n="nav_portfolio">Dự án</a></li>
+        <li><a href="#mascot" data-i18n="nav_mascot">Mascot VELOC</a></li>
+        <li><a href="#services" data-i18n="nav_services">Dịch vụ</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Booking</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span data-lang="vi" class="active">VI</span>
+          <span data-lang="en">EN</span>
+        </button>
+        <a href="#contact" class="btn btn-primary" style="padding:9px 16px;font-size:0.78rem;" data-i18n="nav_contact">Booking</a>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="top">
+    <div class="hero-blade" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span data-i18n="hero_status">Sẵn sàng nhận dự án Esports & Freelance 2026</span>
+        </div>
+
+        <div class="eyebrow" data-i18n="hero_eyebrow">THẠC NGUYỄN ĐÌNH VŨ // VELOCE (FKA KENN)</div>
+
+        <h1 class="hero-title">
+          <span data-i18n="hero_title_1">KIẾN TẠO THỊ GIÁC</span><br>
+          <span class="accent-text" data-i18n="hero_title_2">TRONG TỪNG NHỊP ĐẤU</span>
+        </h1>
+
+        <p class="hero-tagline" data-i18n="hero_tagline">BUILT FOR REAL-TIME. // ESPORTS CREATIVE & MEDIA MANAGER</p>
+
+        <p class="hero-desc" data-i18n="hero_desc">
+          Freelance Esports Creative & Media Manager tại CLB Esports Đại học Phenikaa (PEC). Chuyên thiết kế Key Visual giải đấu, bộ Social Kit đồng bộ, ấn phẩm sự kiện WatchParty và thiết kế thương mại tốc độ cao.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta_work">Khám phá 21 Dự án</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_book">Đặt lịch / Booking</a>
+          <a href="assets/docs/VELOCE_Personal_Portfolio_2026.pdf" target="_blank" class="btn btn-ghost" data-i18n="hero_cta_pdf">Tải Portfolio PDF</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-value">21+</div>
+            <div class="stat-label" data-i18n="stat_1_lbl">Dự án tiêu biểu (6 hệ thống)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">15+</div>
+            <div class="stat-label" data-i18n="stat_2_lbl">Giải đấu & WatchParty Esports</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">100%</div>
+            <div class="stat-label" data-i18n="stat_3_lbl">Tư duy sản xuất Real-Time</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Mascot VELOC Interactive Stage -->
+      <div class="hero-stage">
+        <div class="stage-topbar">
+          <span data-i18n="stage_label">MASCOT CHÍNH THỨC // VELOC UNIT-01</span>
+          <div class="stage-mode-btns">
+            <button type="button" class="stage-mode-btn active" data-mode="2d">2D HERO</button>
+            <button type="button" class="stage-mode-btn" data-mode="3d">3D ART TOY</button>
+          </div>
+        </div>
+        <div class="stage-viewport">
+          <img id="heroStageImg" src="assets/img/mascot/veloc_hero_2d.png" alt="Mascot VELOC — Veloce Brand Companion">
+        </div>
+        <div class="stage-footer">
+          <span data-i18n="stage_caption">Người bạn đồng hành số của Veloce — Thiết kế 2D/3D & 9 Sticker IP</span>
+          <a href="#mascot" class="stage-badge">CASE STUDY →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT & EXPERIENCE ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow" data-i18n="about_eyebrow">HỒ SƠ CÁ NHÂN & KINH NGHIỆM</div>
+          <h2 class="section-title" data-i18n="about_title">VỀ VELOCE</h2>
+          <p class="section-subtitle" data-i18n="about_sub">Kết hợp tư duy công nghệ (CNTT — ĐH Phenikaa) với thẩm mỹ thị giác Esports hiện đại.</p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="profile-card">
+          <div class="profile-head">
+            <img class="profile-avatar" src="assets/img/brand/portrait.jpg" alt="Thạc Nguyễn Đình Vũ — Veloce">
+            <div>
+              <div class="profile-name">Thạc Nguyễn Đình Vũ</div>
+              <div class="profile-alias">VELOCE (fka Kenn) • Built for Real-Time.</div>
+            </div>
+          </div>
+
+          <div class="profile-meta">
+            <div class="meta-item">
+              <span data-i18n="meta_dob_lbl">Năm sinh</span>
+              <strong>20/07/2003</strong>
+            </div>
+            <div class="meta-item">
+              <span data-i18n="meta_loc_lbl">Khu vực</span>
+              <strong data-i18n="meta_loc_val">Bắc Giang – Hà Nội</strong>
+            </div>
+            <div class="meta-item">
+              <span data-i18n="meta_edu_lbl">Học vấn</span>
+              <strong data-i18n="meta_edu_val">K15 CNTT — ĐH Phenikaa</strong>
+            </div>
+            <div class="meta-item">
+              <span data-i18n="meta_role_lbl">Định vị</span>
+              <strong data-i18n="meta_role_val">Esports Creative & Media</strong>
+            </div>
+          </div>
+
+          <div>
+            <div class="eyebrow" style="margin-bottom:10px;">CORE TOOLKIT</div>
+            <div class="skills-wrap">
+              <span class="skill-chip">Adobe Photoshop</span>
+              <span class="skill-chip">Adobe Illustrator</span>
+              <span class="skill-chip">Premiere / After Effects</span>
+              <span class="skill-chip">Figma</span>
+              <span class="skill-chip">Social Media Kit</span>
+              <span class="skill-chip">Key Visual & Retouch</span>
+              <span class="skill-chip">Event & WatchParty</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-card">
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="tl-period" data-i18n="tl_1_period">2024 — HIỆN TẠI</div>
+              <div class="tl-role" data-i18n="tl_1_role">Esports Creative & Media Manager</div>
+              <div class="tl-org" data-i18n="tl_1_org">CLB Esports Đại học Phenikaa (PEC)</div>
+              <p class="tl-desc" data-i18n="tl_1_desc">Định hướng hình ảnh chủ đạo (Key Visual), ấn phẩm giải đấu (UEC, TFT Awakening Era, PUBG Mobile, Valorant), sự kiện Club Day, Esports Career Talk & quản lý đội ngũ thiết kế.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-period" data-i18n="tl_2_period">2023 — HIỆN TẠI</div>
+              <div class="tl-role" data-i18n="tl_2_role">Freelance Esports & Brand Designer</div>
+              <div class="tl-org" data-i18n="tl_2_org">Veloce (fka Kenn) — Độc lập</div>
+              <p class="tl-desc" data-i18n="tl_2_desc">Thiết kế Key Visual giải đấu, nhận diện thương hiệu cá nhân/doanh nghiệp, Mascot IP, Menu F&B thương mại, ấn phẩm E-Commerce và dự án cộng đồng.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-period" data-i18n="tl_3_period">2024 — 2026</div>
+              <div class="tl-role" data-i18n="tl_3_role">Community Creative & Event Visuals</div>
+              <div class="tl-org" data-i18n="tl_3_org">Team Flash & Cộng đồng Flazers (AOV)</div>
+              <p class="tl-desc" data-i18n="tl_3_desc">Sản xuất chuỗi ấn phẩm cổ vũ, giải đấu cộng đồng (Warrior, Solo Elsu, Crossover, Giáng Sinh, Quốc Khánh 2/9) và tác nghiệp truyền thông sự kiện SEA Games WatchParty.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO GALLERY ==================== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow" data-i18n="port_eyebrow">DANH MỤC TÁC PHẨM TUYỂN CHỌN</div>
+          <h2 class="section-title" data-i18n="port_title">DỰ ÁN TIÊU BIỂU</h2>
+          <p class="section-subtitle" data-i18n="port_sub">Tổng hợp 21 sản phẩm nổi bật từ 6 hệ thống dự án: PEC Phenikaa, Team Flash & Flazers, Bản Làng Tia Chớp, Zô Man, Veloce Brand & Freelancer Kenn.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter_all">Tất cả (21)</button>
+          <button type="button" class="filter-btn" data-filter="esports" data-i18n="filter_esports">Esports & Giải đấu</button>
+          <button type="button" class="filter-btn" data-filter="flazers" data-i18n="filter_flazers">Team Flash & Flazers</button>
+          <button type="button" class="filter-btn" data-filter="brand" data-i18n="filter_brand">Thương hiệu & Mascot</button>
+          <button type="button" class="filter-btn" data-filter="freelance" data-i18n="filter_freelance">Freelance & Thương mại</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== MASCOT VELOC CASE STUDY ==================== -->
+  <section class="section mascot-section" id="mascot">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow" data-i18n="mascot_eyebrow">BRAND IP & CHARACTER DESIGN</div>
+          <h2 class="section-title" data-i18n="mascot_title">MASCOT VELOC</h2>
+          <p class="section-subtitle" data-i18n="mascot_sub">Humanoid Mini Creative Bot — Đại diện cho tinh thần sáng tạo tốc độ cao "Built for Real-Time." của Veloce.</p>
+        </div>
+        <a href="assets/docs/VELOC_Character_Portfolio_CaseStudy.pdf" target="_blank" class="btn btn-outline">
+          VELOC Case Study (.PDF) ↗
+        </a>
+      </div>
+
+      <div class="mascot-showcase">
+        <div class="mascot-viewer">
+          <div class="mascot-tabs">
+            <button type="button" class="mascot-tab active" data-view="2d" data-i18n="tab_2d">Hero 2D</button>
+            <button type="button" class="mascot-tab" data-view="3d" data-i18n="tab_3d">3D Art Toy</button>
+            <button type="button" class="mascot-tab" data-view="turn" data-i18n="tab_turn">Turnaround 4 góc</button>
+            <button type="button" class="mascot-tab" data-view="expr" data-i18n="tab_expr">9 Biểu cảm LED</button>
+            <button type="button" class="mascot-tab" data-view="pose" data-i18n="tab_pose">6 Action Poses</button>
+          </div>
+          <div class="mascot-canvas">
+            <img id="mascotMainImg" src="assets/img/mascot/veloc_hero_2d.png" alt="Mascot VELOC Showcase">
+          </div>
+        </div>
+
+        <div class="mascot-info">
+          <div class="lore-box">
+            <h3 data-i18n="lore_title">Câu chuyện & Thiết kế</h3>
+            <p data-i18n="lore_desc">
+              VELOC mang giáp trắng sứ tối giản kết hợp màn hình visor kính xanh Abyss Navy hiển thị cảm xúc LED Cyan theo thời gian thực. Đeo tai nghe Studio Pro, luôn kề cận laptop gắn biểu tượng chữ V đặc trưng — sẵn sàng "gánh deadline" cùng mọi giải đấu.
+            </p>
+          </div>
+
+          <div class="sticker-dock">
+            <div class="eyebrow" style="margin-bottom:4px;" data-i18n="sticker_title">Bộ 9 Sticker VELOC (Bấm để tương tác)</div>
+            <div class="sticker-grid" id="stickerGrid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES & WORKFLOW ==================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow" data-i18n="svc_eyebrow">DỊCH VỤ & QUY TRÌNH</div>
+          <h2 class="section-title" data-i18n="svc_title">GIẢI PHÁP THIẾT KẾ</h2>
+          <p class="section-subtitle" data-i18n="svc_sub">Quy trình tinh gọn, tốc độ phản hồi nhanh, bàn giao trọn bộ file nguồn (.AI, .PSD, .PNG, .PDF) sẵn sàng chạy sự kiện.</p>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card tilt-card reveal">
+          <div class="service-num">01 // ESPORTS</div>
+          <h3 data-i18n="svc_1_title">Esports Key Visual & Giải đấu</h3>
+          <p data-i18n="svc_1_desc">Poster giải đấu, Key Visual chủ đạo, bộ ấn phẩm lịch thi đấu, BXH, MVP, Standee & Backdrop sân khấu.</p>
+          <div class="service-tags"><span>Key Visual</span><span>Poster</span><span>Standee</span></div>
+        </div>
+
+        <div class="service-card tilt-card reveal">
+          <div class="service-num">02 // SOCIAL KIT</div>
+          <h3 data-i18n="svc_2_title">Social Media Kit & Templates</h3>
+          <p data-i18n="svc_2_desc">Bộ ấn phẩm đồng bộ đa nền tảng (Avatar, Cover, Banner), hệ thống template bài đăng Esports 1080×1350 dễ chỉnh sửa.</p>
+          <div class="service-tags"><span>Social Kit</span><span>Templates</span><span>Avatars & Covers</span></div>
+        </div>
+
+        <div class="service-card tilt-card reveal">
+          <div class="service-num">03 // COMMERCIAL</div>
+          <h3 data-i18n="svc_4_title">Event, WatchParty & Thương mại</h3>
+          <p data-i18n="svc_4_desc">Ấn phẩm truyền thông sự kiện, WatchParty cộng đồng, Menu F&B, Merchandise (Áo đấu, Túi Tote) và ảnh E-Commerce.</p>
+          <div class="service-tags"><span>WatchParty</span><span>Menu F&B</span><span>Merch</span></div>
+        </div>
+      </div>
+
+      <div class="workflow-strip">
+        <div class="wf-step">
+          <div class="wf-code">STEP 01</div>
+          <h4 data-i18n="wf_1_t">Tiếp nhận Brief</h4>
+          <p data-i18n="wf_1_d">Thống nhất mục tiêu, kích thước, deadline & nhận diện thương hiệu.</p>
+        </div>
+        <div class="wf-step">
+          <div class="wf-code">STEP 02</div>
+          <h4 data-i18n="wf_2_t">Concept & Moodboard</h4>
+          <p data-i18n="wf_2_d">Chốt bố cục chủ đạo, bảng màu và phong cách thị giác trong 24h.</p>
+        </div>
+        <div class="wf-step">
+          <div class="wf-code">STEP 03</div>
+          <h4 data-i18n="wf_3_t">Sản xuất Real-Time</h4>
+          <p data-i18n="wf_3_d">Triển khai thiết kế chi tiết, cập nhật tiến độ liên tục & tinh chỉnh nhanh.</p>
+        </div>
+        <div class="wf-step">
+          <div class="wf-code">STEP 04</div>
+          <h4 data-i18n="wf_4_t">Bàn giao File nguồn</h4>
+          <p data-i18n="wf_4_d">Xuất đủ bản Web/In ấn cùng file thiết kế gốc (.AI / .PSD / Font).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & BOOKING ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow" data-i18n="contact_eyebrow">KẾT NỐI & ĐẶT LỊCH LÀM VIỆC</div>
+          <h2 class="section-title" data-i18n="contact_title">BẮT ĐẦU DỰ ÁN CÙNG VELOCE</h2>
+          <p class="section-subtitle" data-i18n="contact_sub">Cần thiết kế giải đấu Esports, nhận diện thương hiệu hay bộ ấn phẩm sự kiện? Gửi brief ngay hoặc tải nhanh Portfolio PDF bên dưới.</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <div class="contact-item">
+            <div>
+              <small data-i18n="contact_email_lbl">EMAIL CHÍNH THỨC</small>
+              <strong>thacnguyendinhvu.media@gmail.com</strong>
+            </div>
+            <button type="button" class="copy-btn" data-copy="thacnguyendinhvu.media@gmail.com">COPY</button>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small>HOTLINE / ZALO</small>
+              <strong>0367.203.855</strong>
+            </div>
+            <button type="button" class="copy-btn" data-copy="0367203855">COPY</button>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small>DISCORD</small>
+              <strong>@thacnguyendinhvu_veloce</strong>
+            </div>
+            <button type="button" class="copy-btn" data-copy="@thacnguyendinhvu_veloce">COPY</button>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <small data-i18n="contact_loc_lbl">KHU VỰC HOẠT ĐỘNG</small>
+              <strong data-i18n="contact_loc_val">Bắc Giang – Hà Nội, Việt Nam (Remote Toàn quốc)</strong>
+            </div>
+          </div>
+
+          <div class="download-hub">
+            <div class="eyebrow" style="margin-bottom:6px;" data-i18n="dl_title">Tài liệu Bàn giao & Hồ sơ (.PDF)</div>
+            <div class="download-links">
+              <a class="dl-card" href="assets/docs/VELOCE_Personal_Portfolio_2026.pdf" target="_blank">
+                VELOCE Personal Portfolio 2026 <span>PDF ↓</span>
+              </a>
+              <a class="dl-card" href="assets/docs/VELOC_Character_Portfolio_CaseStudy.pdf" target="_blank">
+                VELOC Mascot Character Case Study <span>PDF ↓</span>
+              </a>
+              <a class="dl-card" href="assets/docs/Veloce_Brand_Guidelines_2026.pdf" target="_blank">
+                Veloce Brand Guidelines 2026 <span>PDF ↓</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <h3 style="font-family:var(--font-display);font-size:1.35rem;margin-bottom:18px;" data-i18n="form_title">Gửi Yêu cầu Booking Nhanh</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bName" data-i18n="f_name">Tên của bạn / Tổ chức</label>
+              <input type="text" id="bName" required placeholder="VD: BTC Giải đấu / Agency...">
+            </div>
+            <div class="form-group">
+              <label for="bContact" data-i18n="f_contact">Email / SĐT / Discord</label>
+              <input type="text" id="bContact" required placeholder="name@email.com / 09xx...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bService" data-i18n="f_service">Hạng mục cần thiết kế</label>
+            <select id="bService">
+              <option value="Esports Key Visual & Tournament">Esports Key Visual & Giải đấu</option>
+              <option value="Social Media Kit & Templates">Social Media Kit & Templates</option>
+              <option value="Event / WatchParty / Commercial">Event, WatchParty & Thương mại (Menu / Merch)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bMsg" data-i18n="f_msg">Mô tả ngắn gọn dự án & Deadline mong muốn</label>
+            <textarea id="bMsg" rows="4" required placeholder="Số lượng ấn phẩm, thời gian sự kiện, yêu cầu đặc biệt..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="f_submit">Gửi Yêu cầu & Mở Email</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+        <img src="assets/img/brand/veloce-logo-dark.svg" alt="Veloce" style="height:24px;">
+        <span style="font-family:var(--font-mono);font-size:0.76rem;color:var(--text-muted);" data-i18n="footer_copy">© 2026 VELOCE (Thạc Nguyễn Đình Vũ). Built for Real-Time.</span>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/TNDVVeloce5207" target="_blank" rel="noopener" class="social-pill">Facebook ↗</a>
+        <a href="https://www.behance.net/TNDVVeloce" target="_blank" rel="noopener" class="social-pill">Behance ↗</a>
+        <a href="https://www.tiktok.com/@nguyendinhvu_veloce" target="_blank" rel="noopener" class="social-pill">TikTok ↗</a>
+        <a href="https://www.instagram.com/thacnguyendinhvu_veloce" target="_blank" rel="noopener" class="social-pill">Instagram ↗</a>
+        <button type="button" class="social-pill copy-btn" data-copy="@thacnguyendinhvu_veloce" style="background:none;">Discord: @thacnguyendinhvu_veloce</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-dialog">
+      <div class="lightbox-media">
+        <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+        <img id="lbImg" src="" alt="">
+        <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+      </div>
+      <div class="lightbox-info">
+        <button type="button" class="lb-close" id="lbClose" aria-label="Close">✕</button>
+        <div>
+          <span class="stage-badge" id="lbCat"></span>
+          <h3 id="lbTitle" style="font-family:var(--font-display);font-size:1.35rem;margin:12px 0 10px;line-height:1.25;"></h3>
+          <p id="lbDesc" style="font-size:0.9rem;color:var(--frost-silver);margin-bottom:18px;"></p>
+
+          <div class="meta-item" style="margin-bottom:10px;">
+            <span data-i18n="lb_client">Hệ thống / Khách hàng</span>
+            <strong id="lbClient"></strong>
+          </div>
+          <div class="meta-item">
+            <span data-i18n="lb_role">Vai trò</span>
+            <strong id="lbRole"></strong>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--border-subtle);font-family:var(--font-mono);font-size:0.76rem;color:var(--text-muted);">
+          <span id="lbCounter">1 / 21</span>
+          <a href="#contact" onclick="closeLightbox()" style="color:var(--cyan-accent);font-weight:600;" data-i18n="lb_book">ĐẶT THIẾT KẾ TƯƠNG TỰ →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FLOATING MASCOT VELOC ASSISTANT ==================== -->
+  <div class="veloc-widget">
+    <div class="veloc-bubble" id="velocBubble">
+      <div class="veloc-bubble-head">
+        <span id="velocTag">VELOC // HI!</span>
+        <button type="button" id="velocClose" aria-label="Close">✕</button>
+      </div>
+      <p class="veloc-bubble-msg" id="velocMsg"></p>
+      <div class="veloc-quick-actions">
+        <a href="#portfolio" class="veloc-quick-btn" data-i18n="veloc_btn_work">21 Dự án</a>
+        <a href="#contact" class="veloc-quick-btn">Booking</a>
+        <a href="assets/docs/VELOCE_Personal_Portfolio_2026.pdf" target="_blank" class="veloc-quick-btn">Portfolio PDF</a>
+      </div>
+    </div>
+    <button type="button" class="veloc-fab" id="velocFab" aria-label="Mascot VELOC Assistant" title="Bấm để trò chuyện cùng VELOC!">
+      <img id="velocFabImg" src="assets/img/mascot/Sticker_09_HI.png" alt="VELOC Assistant">
+    </button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
