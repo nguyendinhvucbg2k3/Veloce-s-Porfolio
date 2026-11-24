@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách Quyền riêng tư — Veloce Med | VELOCE</title>
+  <meta name="description" content="Chính sách quyền riêng tư & bảo mật thông tin chính thức của Fanpage Veloce Med và hệ sinh thái thương hiệu VELOCE (Thạc Nguyễn Đình Vũ).">
+  <link rel="icon" type="image/svg+xml" href="assets/img/brand/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .policy-hero {
+      padding: 136px 0 48px;
+      position: relative;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .policy-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .policy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(11, 29, 58, 0.85);
+      border: 1px solid var(--border-subtle);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--frost-silver);
+    }
+
+    .policy-badge strong {
+      color: var(--cyan-accent);
+      font-weight: 600;
+    }
+
+    .policy-layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 36px;
+      padding: 56px 0 96px;
+      align-items: start;
+    }
+
+    .policy-toc {
+      position: sticky;
+      top: 96px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      backdrop-filter: blur(12px);
+    }
+
+    .policy-toc-title {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cyan-accent);
+      margin-bottom: 14px;
+    }
+
+    .policy-toc ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .policy-toc a {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border-left: 2px solid transparent;
+      transition: var(--transition);
+    }
+
+    .policy-toc a:hover {
+      color: var(--frost-white);
+      background: rgba(30, 150, 252, 0.08);
+      border-left-color: var(--cyan-accent);
+    }
+
+    .policy-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 30px 32px;
+      backdrop-filter: blur(12px);
+      scroll-margin-top: 96px;
+    }
+
+    .policy-card-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .policy-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(0, 102, 214, 0.22);
+      border: 1px solid var(--border-bright);
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--cyan-accent);
+    }
+
+    .policy-card h2 {
+      font-family: var(--font-display);
+      font-size: 1.32rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--frost-white);
+    }
+
+    .policy-card p {
+      color: var(--frost-silver);
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    .policy-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-list {
+      margin: 12px 0 4px 0;
+      padding-left: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .policy-list li {
+      position: relative;
+      padding-left: 20px;
+      color: var(--frost-silver);
+      font-size: 0.95rem;
+    }
+
+    .policy-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 7px;
+      height: 7px;
+      border-radius: 2px;
+      background: var(--cyan-accent);
+      box-shadow: 0 0 8px var(--cyan-glow);
+    }
+
+    .policy-list strong {
+      color: var(--frost-white);
+    }
+
+    .policy-callout {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(0, 102, 214, 0.12);
+      border: 1px solid var(--border-bright);
+      color: var(--frost-white);
+      font-size: 0.92rem;
+    }
+
+    .contact-grid-mini {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .contact-box {
+      padding: 16px 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(6, 13, 26, 0.65);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .contact-box span {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-box a,
+    .contact-box strong {
+      color: var(--cyan-accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+      word-break: break-word;
+    }
+
+    .lang-panel {
+      display: none;
+    }
+
+    .lang-panel.active {
+      display: block;
+    }
+
+    .policy-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 28px 0;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    .policy-footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .policy-layout {
+        grid-template-columns: 1fr;
+        padding-top: 36px;
+      }
+
+      .policy-toc {
+        position: static;
+      }
+
+      .policy-card {
+        padding: 24px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Veloce Home">
+        <img src="assets/img/brand/veloce-logo-dark.svg" alt="VELOCE Logo">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">Giới thiệu</a></li>
+        <li><a href="index.html#portfolio">Dự án</a></li>
+        <li><a href="index.html#services">Dịch vụ</a></li>
+        <li><a href="index.html#contact">Booking</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="Switch Language">
+          <span data-lang="vi" class="active">VI</span>
+          <span data-lang="en">EN</span>
+        </button>
+        <a href="index.html" class="btn btn-outline" style="padding:9px 16px;font-size:0.78rem;">← Trang chủ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== VIETNAMESE VERSION ==================== -->
+  <main class="lang-panel active" id="panel-vi">
+    <section class="policy-hero">
+      <div class="container">
+        <div class="eyebrow">VELOCE MED // PHÁP LÝ & BẢO MẬT</div>
+        <h1 class="section-title">CHÍNH SÁCH <span class="accent-text">QUYỀN RIÊNG TƯ</span></h1>
+        <p class="section-subtitle">
+          Tài liệu này quy định cách <strong>Veloce Med</strong> (thuộc hệ sinh thái thương hiệu <strong>VELOCE</strong>) thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi tương tác trên Fanpage Facebook, Messenger, biểu mẫu đăng ký (Lead Form) và Website chính thức.
+        </p>
+
+        <div class="policy-meta-bar">
+          <div class="policy-badge">Đơn vị quản lý: <strong>Thạc Nguyễn Đình Vũ — VELOCE</strong></div>
+          <div class="policy-badge">Áp dụng cho: <strong>Fanpage Veloce Med & Website VELOCE</strong></div>
+          <div class="policy-badge">Cập nhật lần cuối: <strong>24/11/2026</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container policy-layout">
+      <aside class="policy-toc" aria-label="Mục lục">
+        <div class="policy-toc-title">Mục lục nhanh</div>
+        <ul>
+          <li><a href="#vi-1">01. Phạm vi áp dụng</a></li>
+          <li><a href="#vi-2">02. Thông tin thu thập</a></li>
+          <li><a href="#vi-3">03. Mục đích sử dụng</a></li>
+          <li><a href="#vi-4">04. Lưu trữ & Bảo mật</a></li>
+          <li><a href="#vi-5">05. Chia sẻ với bên thứ ba</a></li>
+          <li><a href="#vi-6">06. Quyền của người dùng</a></li>
+          <li><a href="#vi-7">07. Bản quyền & Sở hữu</a></li>
+          <li><a href="#vi-8">08. Liên hệ & Xóa dữ liệu</a></li>
+        </ul>
+      </aside>
+
+      <div class="policy-content">
+        <article class="policy-card" id="vi-1">
+          <div class="policy-card-head">
+            <span class="policy-num">01</span>
+            <h2>Phạm vi áp dụng</h2>
+          </div>
+          <p>
+            Chính sách quyền riêng tư này áp dụng cho toàn bộ người dùng, khách hàng và đối tác khi truy cập, nhắn tin, bình luận, đăng ký nhận tài liệu hoặc đặt lịch dịch vụ (Chụp • Quay • Dựng • Design • Content) thông qua Fanpage <strong>Veloce Med</strong> và website chính thức của <strong>VELOCE</strong>.
+          </p>
+          <p>
+            Khi bạn chủ động gửi tin nhắn hoặc điền thông tin vào biểu mẫu liên hệ của chúng tôi, bạn đồng ý với các điều khoản xử lý dữ liệu nêu tại trang này.
+          </p>
+        </article>
+
+        <article class="policy-card" id="vi-2">
+          <div class="policy-card-head">
+            <span class="policy-num">02</span>
+            <h2>Thông tin chúng tôi thu thập</h2>
+          </div>
+          <p>Chúng tôi chỉ thu thập những thông tin tối thiểu và cần thiết do bạn chủ động cung cấp:</p>
+          <ul class="policy-list">
+            <li><strong>Thông tin liên hệ:</strong> Họ tên, số điện thoại / Zalo, địa chỉ email, đường dẫn trang cá nhân hoặc tổ chức/thương hiệu đại diện.</li>
+            <li><strong>Thông tin yêu cầu dự án:</strong> Nội dung brief, hạng mục dịch vụ quan tâm, thời gian triển khai, ngân sách dự kiến và các tư liệu bạn gửi qua Messenger/Email/Form.</li>
+            <li><strong>Dữ liệu tương tác cơ bản:</strong> Dữ liệu thống kê ẩn danh từ nền tảng Meta (Facebook Insights) nhằm cải thiện chất lượng nội dung và trải nghiệm người xem.</li>
+          </ul>
+        </article>
+
+        <article class="policy-card" id="vi-3">
+          <div class="policy-card-head">
+            <span class="policy-num">03</span>
+            <h2>Mục đích sử dụng thông tin</h2>
+          </div>
+          <p>Thông tin của bạn được sử dụng duy nhất cho các mục đích hợp pháp sau:</p>
+          <ul class="policy-list">
+            <li>Phản hồi tin nhắn, tư vấn chuyên môn, gửi báo giá và trao đổi công việc theo yêu cầu của bạn.</li>
+            <li>Gửi tài liệu miễn phí, checklist hoặc thông tin sự kiện khi bạn chủ động đăng ký nhận.</li>
+            <li>Triển khai, bàn giao sản phẩm và hỗ trợ sau dự án cho khách hàng/đối tác.</li>
+            <li>Cải thiện chất lượng nội dung, dịch vụ Creative & Media của Veloce Med.</li>
+          </ul>
+          <div class="policy-callout">
+            <strong>Cam kết cốt lõi:</strong> Veloce Med tuyệt đối <strong>không bán, cho thuê hoặc trao đổi</strong> dữ liệu cá nhân của bạn cho bất kỳ bên thứ ba nào vì mục đích thương mại hoặc gửi thư rác (spam).
+          </div>
+        </article>
+
+        <article class="policy-card" id="vi-4">
+          <div class="policy-card-head">
+            <span class="policy-num">04</span>
+            <h2>Lưu trữ & Bảo mật dữ liệu</h2>
+          </div>
+          <p>
+            Mọi thông tin liên hệ và tư liệu dự án của khách hàng được lưu trữ bảo mật trên các hệ thống có xác thực hai lớp (2FA) và chỉ có người phụ trách trực tiếp tại <strong>VELOCE</strong> mới được quyền truy cập.
+          </p>
+          <p>
+            Chúng tôi chỉ lưu giữ thông tin trong thời gian cần thiết để hoàn tất mục đích tư vấn, thực hiện hợp đồng dịch vụ hoặc cho đến khi bạn yêu cầu xóa dữ liệu.
+          </p>
+        </article>
+
+        <article class="policy-card" id="vi-5">
+          <div class="policy-card-head">
+            <span class="policy-num">05</span>
+            <h2>Chia sẻ thông tin với bên thứ ba</h2>
+          </div>
+          <p>Chúng tôi không tiết lộ thông tin cá nhân của bạn ra bên ngoài, ngoại trừ các trường hợp sau:</p>
+          <ul class="policy-list">
+            <li><strong>Nền tảng vận hành:</strong> Dữ liệu bạn gửi qua Facebook/Messenger tuân theo chính sách bảo mật của Meta Platforms, Inc.</li>
+            <li><strong>Sự đồng ý của bạn:</strong> Khi cần phối hợp với nhân sự/đối tác sản xuất trong cùng dự án và đã được bạn chấp thuận trước.</li>
+            <li><strong>Yêu cầu pháp lý:</strong> Khi có yêu cầu hợp pháp từ cơ quan nhà nước có thẩm quyền.</li>
+          </ul>
+        </article>
+
+        <article class="policy-card" id="vi-6">
+          <div class="policy-card-head">
+            <span class="policy-num">06</span>
+            <h2>Quyền của người dùng</h2>
+          </div>
+          <p>Bạn có toàn quyền kiểm soát thông tin cá nhân đã cung cấp cho Veloce Med, bao gồm:</p>
+          <ul class="policy-list">
+            <li>Yêu cầu kiểm tra, cập nhật hoặc chỉnh sửa thông tin liên hệ chưa chính xác.</li>
+            <li>Yêu cầu ngừng nhận tin nhắn thông báo hoặc hủy đăng ký nhận tài liệu bất kỳ lúc nào.</li>
+            <li>Yêu cầu <strong>xóa vĩnh viễn toàn bộ dữ liệu cá nhân</strong> của bạn khỏi hệ thống lưu trữ của chúng tôi (xử lý trong vòng 48 giờ làm việc kể từ khi nhận yêu cầu).</li>
+          </ul>
+        </article>
+
+        <article class="policy-card" id="vi-7">
+          <div class="policy-card-head">
+            <span class="policy-num">07</span>
+            <h2>Bản quyền & Quyền sở hữu nội dung</h2>
+          </div>
+          <p>
+            Toàn bộ hình ảnh, video, thiết kế, kịch bản, bộ nhận diện thương hiệu và nội dung gốc đăng tải trên Fanpage <strong>Veloce Med</strong> thuộc quyền sở hữu trí tuệ của <strong>Thạc Nguyễn Đình Vũ — VELOCE</strong>. Mọi hành vi sao chép hoặc sử dụng cho mục đích thương mại khi chưa có sự đồng ý bằng văn bản đều bị nghiêm cấm.
+          </p>
+        </article>
+
+        <article class="policy-card" id="vi-8">
+          <div class="policy-card-head">
+            <span class="policy-num">08</span>
+            <h2>Thông tin liên hệ & Yêu cầu xóa dữ liệu</h2>
+          </div>
+          <p>
+            Nếu bạn có bất kỳ câu hỏi nào về Chính sách quyền riêng tư hoặc muốn yêu cầu chỉnh sửa/xóa dữ liệu cá nhân, vui lòng liên hệ trực tiếp:
+          </p>
+          <div class="contact-grid-mini">
+            <div class="contact-box">
+              <span>Chủ sở hữu & Quản lý</span>
+              <strong>Thạc Nguyễn Đình Vũ — VELOCE</strong>
+            </div>
+            <div class="contact-box">
+              <span>Email chính thức</span>
+              <a href="mailto:thacnguyendinhvu.media@gmail.com">thacnguyendinhvu.media@gmail.com</a>
+            </div>
+            <div class="contact-box">
+              <span>Hotline / Zalo</span>
+              <a href="tel:0376203855">0376.203.855</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== ENGLISH VERSION ==================== -->
+  <main class="lang-panel" id="panel-en">
+    <section class="policy-hero">
+      <div class="container">
+        <div class="eyebrow">VELOCE MED // LEGAL & PRIVACY</div>
+        <h1 class="section-title">PRIVACY <span class="accent-text">POLICY</span></h1>
+        <p class="section-subtitle">
+          This policy explains how <strong>Veloce Med</strong> (part of the <strong>VELOCE</strong> brand ecosystem) collects, uses, and protects your personal information when you interact with our Facebook Page, Messenger, Lead Forms, and official website.
+        </p>
+
+        <div class="policy-meta-bar">
+          <div class="policy-badge">Managed by: <strong>Thac Nguyen Dinh Vu — VELOCE</strong></div>
+          <div class="policy-badge">Applies to: <strong>Veloce Med Page & VELOCE Website</strong></div>
+          <div class="policy-badge">Last Updated: <strong>Nov 24, 2026</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container policy-layout">
+      <aside class="policy-toc" aria-label="Table of Contents">
+        <div class="policy-toc-title">Quick Navigation</div>
+        <ul>
+          <li><a href="#en-1">01. Scope</a></li>
+          <li><a href="#en-2">02. Information We Collect</a></li>
+          <li><a href="#en-3">03. How We Use Data</a></li>
+          <li><a href="#en-4">04. Storage & Security</a></li>
+          <li><a href="#en-5">05. Third-Party Sharing</a></li>
+          <li><a href="#en-6">06. Your Rights</a></li>
+          <li><a href="#en-7">07. Intellectual Property</a></li>
+          <li><a href="#en-8">08. Contact & Data Deletion</a></li>
+        </ul>
+      </aside>
+
+      <div class="policy-content">
+        <article class="policy-card" id="en-1">
+          <div class="policy-card-head">
+            <span class="policy-num">01</span>
+            <h2>Scope</h2>
+          </div>
+          <p>
+            This Privacy Policy applies to all visitors, clients, and partners who interact, message, comment, request resources, or book Creative & Media services (Photography • Videography • Editing • Design • Content) via the <strong>Veloce Med</strong> Facebook Page and official <strong>VELOCE</strong> channels.
+          </p>
+        </article>
+
+        <article class="policy-card" id="en-2">
+          <div class="policy-card-head">
+            <span class="policy-num">02</span>
+            <h2>Information We Collect</h2>
+          </div>
+          <ul class="policy-list">
+            <li><strong>Contact Information:</strong> Name, phone number / Zalo, email address, and social/organization profile voluntarily submitted by you.</li>
+            <li><strong>Project Inquiry Details:</strong> Briefs, requested services, timelines, budgets, and materials shared via Messenger, Email, or Forms.</li>
+            <li><strong>Aggregated Analytics:</strong> Anonymous platform insights provided by Meta to improve our content quality.</li>
+          </ul>
+        </article>
+
+        <article class="policy-card" id="en-3">
+          <div class="policy-card-head">
+            <span class="policy-num">03</span>
+            <h2>How We Use Information</h2>
+          </div>
+          <ul class="policy-list">
+            <li>Responding to inquiries, providing quotes, and managing project communications.</li>
+            <li>Delivering requested guides, templates, or event updates.</li>
+            <li>Executing and delivering Creative & Media projects and post-project support.</li>
+          </ul>
+          <div class="policy-callout">
+            <strong>Core Commitment:</strong> Veloce Med never sells, rents, or trades your personal data to third parties for spam or unauthorized commercial use.
+          </div>
+        </article>
+
+        <article class="policy-card" id="en-4">
+          <div class="policy-card-head">
+            <span class="policy-num">04</span>
+            <h2>Storage & Security</h2>
+          </div>
+          <p>
+            Client contact data and project files are stored securely using two-factor authentication (2FA) and restricted solely to authorized personnel at <strong>VELOCE</strong>. Data is retained only as long as necessary to fulfill your request or until you ask for deletion.
+          </p>
+        </article>
+
+        <article class="policy-card" id="en-5">
+          <div class="policy-card-head">
+            <span class="policy-num">05</span>
+            <h2>Third-Party Sharing</h2>
+          </div>
+          <p>
+            We do not share personal data with external parties except when operating through platform infrastructure (such as Meta Platforms, Inc.), with your explicit prior consent for project collaboration, or when required by applicable law.
+          </p>
+        </article>
+
+        <article class="policy-card" id="en-6">
+          <div class="policy-card-head">
+            <span class="policy-num">06</span>
+            <h2>Your Rights</h2>
+          </div>
+          <p>
+            You may request access, correction, opt-out from communications, or permanent deletion of your personal data at any time. Verified deletion requests are processed within 48 business hours.
+          </p>
+        </article>
+
+        <article class="policy-card" id="en-7">
+          <div class="policy-card-head">
+            <span class="policy-num">07</span>
+            <h2>Intellectual Property</h2>
+          </div>
+          <p>
+            All original visuals, videos, designs, scripts, and brand assets published on <strong>Veloce Med</strong> are the intellectual property of <strong>Thac Nguyen Dinh Vu — VELOCE</strong>. Unauthorized reproduction or commercial use is strictly prohibited.
+          </p>
+        </article>
+
+        <article class="policy-card" id="en-8">
+          <div class="policy-card-head">
+            <span class="policy-num">08</span>
+            <h2>Contact & Data Deletion Requests</h2>
+          </div>
+          <div class="contact-grid-mini">
+            <div class="contact-box">
+              <span>Owner & Manager</span>
+              <strong>Thac Nguyen Dinh Vu — VELOCE</strong>
+            </div>
+            <div class="contact-box">
+              <span>Official Email</span>
+              <a href="mailto:thacnguyendinhvu.media@gmail.com">thacnguyendinhvu.media@gmail.com</a>
+            </div>
+            <div class="contact-box">
+              <span>Hotline / Zalo</span>
+              <a href="tel:0376203855">0376.203.855</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="policy-footer">
+    <div class="container policy-footer-inner">
+      <span>© 2026 Veloce Med — Managed by Thạc Nguyễn Đình Vũ (VELOCE). Built for Real-Time.</span>
+      <a href="index.html" style="color:var(--cyan-accent);font-weight:600;">← Quay lại trang chủ VELOCE</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const toggle = document.getElementById('langToggle');
+      const panelVi = document.getElementById('panel-vi');
+      const panelEn = document.getElementById('panel-en');
+      const spans = toggle.querySelectorAll('span[data-lang]');
+      let current = 'vi';
+
+      toggle.addEventListener('click', function () {
+        current = current === 'vi' ? 'en' : 'vi';
+        document.documentElement.lang = current;
+        panelVi.classList.toggle('active', current === 'vi');
+        panelEn.classList.toggle('active', current === 'en');
+        spans.forEach(function (el) {
+          el.classList.toggle('active', el.dataset.lang === current);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -46,7 +46,7 @@ Website thương hiệu cá nhân & Hồ sơ năng lực (Portfolio) của **Th�
 
 ## Liên hệ & Booking
 - **Email:** `thacnguyendinhvu.media@gmail.com`
-- **Hotline / Zalo:** `0367.203.855`
+- **Hotline / Zalo:** `0376.203.855`
 - **Discord:** `@thacnguyendinhvu_veloce`
 - **Facebook:** [facebook.com/TNDVVeloce5207](https://www.facebook.com/TNDVVeloce5207)
 - **Behance:** [behance.net/TNDVVeloce](https://www.behance.net/TNDVVeloce)
